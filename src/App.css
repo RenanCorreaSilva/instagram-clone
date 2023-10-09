@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 242, 242);
+}
+
+
+.header__logo{
+    background-color: white;
+    text-align: center;
+}
+
+.header__logo img{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.header__loginForm{
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    border: 1px solid #ccc;
+    
+}   
+
+.header__loginForm input[type=text],
+.header__loginForm input[type=password]{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    padding-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    outline-color: #ccc;
+}
+
+.header__loginForm input[type=submit]{
+    background-color: #0095f6;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    padding: 0px 10px;
+    height: 36px;   
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.btn_criarConta{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn_criarConta a{
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.header__pai{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    background-color: white;
+    padding: 0 2%;
+}
+
+.header__pai > .header__logo {
+    text-align: left;
+    width: 50%;
+    height: 50px;
+}
+
+.header__pai > .header__logo img{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.header__logadoInfo{
+    text-align: right;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.header__logadoInfo a{
+    margin: 10px;
+    background-color: #0095f6;
+    color: white;
+    font-size: 15px;
+    padding: 3px 10px;
+    height: 20px;   
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.modalCriarConta, .modalUpload{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    z-index: 999;
+}
+
+
+.formCriarConta, .formUpload{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    max-width: 700px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.formCriarConta h2, .formCriarConta p{
+    margin-bottom: 10px;
+}
+
+.formCriarConta input, .formUpload input{
+    width: 100%;
+    height: 36px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    outline-color: #ccc;
+    margin-top: 10px;
+}
+
+.formCriarConta input[type=submit], .formUpload input[type=submit]{
+    background-color: #0095f6;
+    cursor: pointer;
+    color: white;
+}
+
+.close-modal-criar, .close-modal-upload{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #0095f6;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.postSingle{
+    background-color: white;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.postSingle img{
+    width: 100%;
+}
+
+.postSingle p{
+    padding: 10px;
+}
+
+.postSingle textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+.postSingle form{
+    padding: 20px;
+}
+
+.postSingle input[type=submit]{
+    background-color: #0095f6;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    padding: 8px 10px;
+}
